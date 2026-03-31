@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seat Selection</title>
+  <link rel="stylesheet" href="/static/style.css">
+<body class="bg-seat">
+
+  <header class="topbar">
+    <div class="brand">CinemaBook</div>
+    <nav class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="movie.html">Movie Details</a>
+    </nav>
+  </header>
+
+  <main class="seat-shell">
+    <section class="seat-banner">
+      <div class="seat-banner-left">
+        <img src="/images/poster6.PNG" alt="Movie poster" class="mini-poster">
+        <div>
+          <span class="badge">Now Showing</span>
+          <h1>John Wick: Chapter 3</h1>
+          <p class="meta">8.1/10 • 2h 10m • Thriller / Mystery</p>
+          <a href="#" class="btn btn-outline">Watch Trailer</a>
+        </div>
+      </div>
+
+      <div class="seat-banner-right">
+        <div class="selector">
+          <span>Date</span>
+          <strong>Thu 07</strong>
+        </div>
+        <div class="selector">
+          <span>Time</span>
+          <strong>09:45 AM</strong>
+        </div>
+        <div class="selector">
+          <span>Theater</span>
+          <strong>Toronto</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="seat-layout">
+      <aside class="seat-summary">
+        <h3>Your Selected Seats</h3>
+        <p>3 Seats</p>
+
+        <div class="ticket-tags">
+          <span>H10</span>
+          <span>H11</span>
+          <span>H12</span>
+        </div>
+
+        <div class="ticket-breakdown">
+          <div><span>Normal</span><strong>3</strong></div>
+          <div><span>Deluxe</span><strong>0</strong></div>
+          <div><span>Super</span><strong>0</strong></div>
+        </div>
+
+        <div class="total-row">
+          <span>Total</span>
+          <strong>CAD 50.00</strong>
+        </div>
+
+        <button class="btn btn-primary full-btn">+ Add Foods</button>
+        <button class="btn btn-gold full-btn">Purchase</button>
+      </aside>
+
+      <div class="seat-map-wrap">
+        <div class="seat-legend">
+          <span><i class="legend-box sold"></i> Sold</span>
+          <span><i class="legend-box available"></i> Available</span>
+          <span><i class="legend-box selected"></i> Selected</span>
+        </div>
+
+        <div class="screen-bar">SCREEN THIS WAY</div>
+
+        <div class="seat-map">
+          <div class="seat-row"><span>A</span><div class="seats"></div></div>
+          <div class="seat-row"><span>B</span><div class="seats"></div></div>
+          <div class="seat-row"><span>C</span><div class="seats"></div></div>
+          <div class="seat-row"><span>D</span><div class="seats"></div></div>
+          <div class="seat-row"><span>E</span><div class="seats"></div></div>
+          <div class="seat-row"><span>F</span><div class="seats"></div></div>
+          <div class="seat-row"><span>G</span><div class="seats"></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

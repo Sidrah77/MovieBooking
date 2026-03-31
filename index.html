@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CinemaBook</title>
+  <link rel="stylesheet" href="../static/style.css"></head>
+<body class="bg-home">
+
+  <header class="topbar">
+    <div class="brand">CinemaBook</div>
+    <nav class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="movie.html">Movies</a>
+      <a href="seat-selection.html">Tickets</a>
+      <a href="#">Login</a>
+    </nav>
+    <div class="profile-pill">Hi, Guest</div>
+  </header>
+
+  <main class="home-shell">
+    <section class="hero-card">
+      <div class="hero-left">
+        <span class="badge">Exclusive Show</span>
+        <h1>Avatar: The Way of Water</h1>
+        <p class="meta">3h 12m • PG-13 • 2022</p>
+        <p class="summary">
+          Jake Sully lives with his newfound family formed on the extrasolar moon Pandora.
+        </p>
+        <div class="hero-actions">
+          <a href="{{ url_for('seat_selection') }}" class="btn btn-primary">Get Ticket</a>
+          <a href="{{ url_for('movie') }}" class="btn btn-secondary">Watch Trailer</a>
+        </div>
+      </div>
+
+
+    </section>
+
+    <section class="section-block">
+      <div class="section-head">
+        <h2>Now Showing</h2>
+        <a href="#">View all</a>
+      </div>
+
+      <div class="movie-row">
+        <article class="movie-card">
+          <img src="/images/poster1.PNG" alt="Movie poster">
+          <h3>Ant-Man and the Wasp</h3>
+          <p>Action • 2023</p>
+          <a href="{{ url_for('movie') }}" class="mini-btn">Get Ticket</a>
+        </article>
+
+        <article class="movie-card">
+          <img src="/images/poster2.PNG" alt="Movie poster">
+          <h3>Black Panther</h3>
+          <p>Adventure • 2022</p>
+          <a href="{{ url_for('movie') }}" class="mini-btn">Get Ticket</a>
+        </article>
+
+        <article class="movie-card">
+          <img src="/images/poster3.PNG" alt="Movie poster">
+          <h3>Creed III</h3>
+          <p>Drama • 2023</p>
+          <a href="{{ url_for('movie') }}" class="mini-btn">Get Ticket</a>
+        </article>
+
+        <article class="movie-card">
+          <img src="/images/poster4.PNG" alt="Movie poster">
+          <h3>Mario Bros</h3>
+          <p>Cartoon • 2023</p>
+          <a href="{{ url_for('movie') }}" class="mini-btn">Get Ticket</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-head">
+        <h2>Coming Soon</h2>
+        <a href="#">View all</a>
+      </div>
+
+      <div class="movie-row">
+        <article class="movie-card">
+          <img src="https://via.placeholder.com/220x320" alt="Movie poster">
+          <h3>Fast X</h3>
+          <p>Action • Coming Soon</p>
+        </article>
+
+        <article class="movie-card">
+          <img src="https://via.placeholder.com/220x320" alt="Movie poster">
+          <h3>Guardians of Galaxy</h3>
+          <p>Sci-Fi • Coming Soon</p>
+        </article>
+
+        <article class="movie-card">
+          <img src="https://via.placeholder.com/220x320" alt="Movie poster">
+          <h3>The Flash</h3>
+          <p>Action • Coming Soon</p>
+        </article>
+
+        <article class="movie-card">
+          <img src="https://via.placeholder.com/220x320" alt="Movie poster">
+          <h3>Transformers</h3>
+          <p>Sci-Fi • Coming Soon</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
