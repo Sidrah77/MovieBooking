@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Details</title>
+  <link rel="stylesheet" href="../static/style.css">
+</head>
+<body class="bg-home">
+
+  <header class="topbar">
+    <div class="brand">CinemaBook</div>
+    <nav class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="seat-selection.html">Select Seats</a>
+    </nav>
+  </header>
+
+  <main class="movie-page">
+    <section class="detail-hero">
+      <div class="poster-wrap">
+        <img src="/images/poster5.PNG" alt="Movie poster">
+      </div>
+
+      <div class="detail-info">
+        <span class="badge">Now Showing</span>
+        <h1>Avatar: The Way of Water</h1>
+        <p class="meta">IMDb 8.1/10 • 2h 10m • 2022 • Thriller / Mystery</p>
+        <p class="summary">
+          A visually rich cinematic experience with immersive action and dramatic storytelling.
+        </p>
+
+        <div class="info-grid">
+          <div><span>Genre</span><strong>Sci-Fi</strong></div>
+          <div><span>Duration</span><strong>2h 10m</strong></div>
+          <div><span>Rating</span><strong>PG-13</strong></div>
+          <div><span>Cinema</span><strong>Downtown Cineplex</strong></div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="{{ url_for('seat_selection') }}" class="btn btn-primary">Book Now</a>
+          <a href="#" class="btn btn-secondary">Watch Trailer</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-head">
+        <h2>Showtimes</h2>
+      </div>
+
+      <div class="time-grid">
+        <button class="time-chip">10:00 AM</button>
+        <button class="time-chip active">1:15 PM</button>
+        <button class="time-chip">4:30 PM</button>
+        <button class="time-chip">7:45 PM</button>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
